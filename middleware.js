@@ -45,6 +45,7 @@ module.exports.isAuthor = async (req, res, next) => {
         req.flash('error', 'You do not have permission to do that!');
         return res.redirect(`/campgrounds/${id}`);
     }
+    next();
 }
 
 module.exports.isReviewAuthor = async (req, res, next) => {
@@ -54,4 +55,5 @@ module.exports.isReviewAuthor = async (req, res, next) => {
         req.flash('error', 'You do not have permission to do that!');
         return res.redirect(`/campgrounds/${id}`);
     }
+    next();
 }
