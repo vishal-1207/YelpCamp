@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/css/stars.css" />
 <link rel="stylesheet" href="/css/custom.css" />
 <div class="row">
-  <div class="col-6">
+  <div class="col-6 mb-5">
     <div id="campgroundCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <% campground.images.forEach((img, i) => { %>
@@ -33,7 +33,7 @@
       <% } %>
     </div>
 
-    <div class="card mb-3">
+    <div class="card">
       <div class="card-body">
         <h5 class="card-title"><%= campground.title%></h5>
         <p class="card-text"><%= campground.description%></p>
